@@ -1,24 +1,24 @@
-# chatdaktarithemedbot 
-> A machine learning NLP-based Medical Assistant Chat Bot created using a simple Multilayer Perception(MLP), a feed-forward neural network.
+# ChatDaktari Medbot
+> An Artificially Intelligent Medical Assistant Chat Bot created using a simple Multilayer Perception(MLP) which is a feed forward neural network.
 
-> Python and deep learning algorithms were used to create realistic-sounding conversations.
+> Python and deep learning algorithoms were used for the creation of realistic-sounding conversations.
 
 > Concepts from natural language processing, deep learning, and neural networks were used in this project.
 
-> A GUI is used to display the program's input and output.
+> A GUI is used to display the input and the output of the program.
 
-> The GUI is designed to look like a typical messaging app used in social media.
+> The GUI is designed to look like a typical messaging app using in social media.
 
 
 ## Design Process and Methods
 
-> The chatbot is divided into five Python files. Each Python file performs a task that is essential for the bot to work. In this report, the five Python files are going to be categorized and explained in their respective category. The categories are as follows: training, processing, and graphic user interface. The Python files that handle the training of the dataset are nnModel.py, stem.py, and training.py. The Python file that handles the processing of data is predict.py and the Python file that handles the graphical user interface is gui.py. All of these files will be explored in more detail throughout the report. For our dataset, we chose to create our own data and it was saved in intents.json.
+> The chatbot is divided into five python files. Each python file performs a task that is essential for the bot to work. In this report, the five python files are going to be categorized and explained in their respective category. The categories are as follows: training, processing, and graphic user interface. The python files that handle the training of the dataset are nnModel.py, stem.py, and training.py. The python file that handles the processing of data is predict.py and the python file that handles the graphical user interface is gui.py. All of these files will be explored in more details throughout the report. For our dataset, we chose to create our own data and it was saved in intents.json.
 
 ## Training
 >The training data was various user intents and associated patterns in a JSON file. Examples of phrases that might be used by a user (with patterns) and a list of responses.
 >The main function of the python files that fall under this category is to load the data, process it, and train the bot using it. There are many processes that the data goes through but the main ones are looping through different linear function layers of a neural network and stemming. Stemming is the process of simplifying a word to its root form which helps the program to recognize patterns more efficiently. After the data goes through stemming, the program then sends it to the neural network layers that house a linear function that is used in recognizing patterns. After that, the process is repeated a couple of times and the trained data is then stored in a file called data.pth. 
 
->The stem.py file handles the stemming. The function tokenizeWords() creates an array that isolates each word and saves them. This array can be used later in the stemWords() function. In the stem words () function, the process of stemming is used and the root of a word is returned. 
+>The stem.py file handles the stemming. The function tokenizeWords() creates an array that isolates each word and saves them. This array can be used later in the stemWords() function. In the stemWords() function, the process of stemming is used and the root of a word is returned. 
 
 >The nnModel.py file houses the neural network that processes the data. The layers are defined in the __init__ function which is the standard function that handles the initialization of the attributes of an object. In this function, the three linear function layers are initialized with the addition of another linear function that focuses on the elements of a sentence instead of the sentence as a whole. The other function in this class is the forward() function which is the function that processes the data. In this function, the data is passed through each of the three linear function layers and ultimately ends up in the last element-specific linear function layer. 
 
