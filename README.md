@@ -1,5 +1,5 @@
 # chatdaktarithemedbot 
-> An Artificially Intelligent Medical Assistant Chat Bot created using a simple Multilayer Perception(MLP), a feed-forward neural network.
+> A machine learning NLP-based Medical Assistant Chat Bot created using a simple Multilayer Perception(MLP), a feed-forward neural network.
 
 > Python and deep learning algorithms were used to create realistic-sounding conversations.
 
